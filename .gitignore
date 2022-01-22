@@ -1,0 +1,4 @@
+#Ignore text files
+*/txt 
+#Ignore /ignore folder
+/ignore
