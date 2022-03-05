@@ -1,23 +1,49 @@
-h1{
-    font-size: 2em;
+.aboutme
+{
+    position:relative
+}
+.headshot{
+    position:relative;
+    height: 200px;
+    left: 20px;
+}
+
+.text{
+    position: absolute;
+    left: 400px;
+    top: 0
+}
+
+.text-content{
+    font-size: 20px;
 }
 
 img{
-    height: 400px;
+    height: 50px;;
     
 }
 
-#github{
-    height: 50px;
-}
-.even{
-    color: lightyellow;
+.headers{
+    font-size: 2em;
+    text-align: center;
 }
 
-.odd{
-    color: rgb(252, 209, 192);
+.subheaders
+{
+    font-size: 1.5em;
+    color: rgb(163, 191, 216);
+    margin-left: 20px;
 }
-body{
-    background-color: rgb(169, 169, 240);
-    color: rgb(47, 111, 114);
+
+.list{
+    font-size: 17px;
+}
+
+.contacts{
+    align-content: center;
+}
+body
+{
+    background-color: rgb(51, 107, 139);
+    color: rgb(163, 191, 216);
 }
