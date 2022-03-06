@@ -1,17 +1,21 @@
 .aboutme
 {
-    position:relative
+    position:relative;
 }
+
 .headshot{
     position:relative;
     height: 200px;
-    left: 20px;
+    left: 150px;
+    top: -20px;
+    border-radius: 15%;
 }
 
 .text{
     position: absolute;
-    left: 400px;
-    top: 0
+    left: 500px;
+    right: 500px;
+    top: 0;
 }
 
 .text-content{
@@ -19,12 +23,13 @@
 }
 
 img{
+
     height: 50px;;
     
 }
 
 .headers{
-    font-size: 2em;
+    font-size: 2.25em;
     text-align: center;
 }
 
@@ -35,13 +40,60 @@ img{
     margin-left: 20px;
 }
 
+.category{
+    position: relative;
+    height: auto;
+}
+
+.software{
+    position: relative;
+    left: 25%;
+    top: 40px;
+}
+
+.hardware{
+    position: relative;
+    left: 70%;
+    top: -100px;
+}
+
+.robotics{
+    position: relative;
+    top: 40px;
+    left: 17.5%;
+    max-width: 400px;
+}
+
+.icssc{
+    position: relative;
+    left: 42.5%;
+    top: -150px;
+    max-width: 400px;
+}
+
+.IEEE{
+    position: relative;
+    top: 40px;
+    left: 68%;
+    top: -330px;
+    max-width: 400px;
+}
+
+
 .list{
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .contacts{
-    align-content: center;
+    position: relative;
+    padding-left: 43%;
+    top: -100px;
 }
+
+.resume{
+    margin-left: 15px;
+}
+
 body
 {
     background-color: rgb(51, 107, 139);
