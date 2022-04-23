@@ -5,16 +5,28 @@
 
 .headshot{
     position:relative;
-    height: 200px;
+    height: 225px;
     left: 150px;
     top: -20px;
-    border-radius: 15%;
+    border-radius: 50%;
+    border: 5px solid beige;
+}
+
+.vegas_photo
+{
+    position: relative;
+    height: 100px;
+    left: 100px;
+    top: 10px;
+    border: 5px solid;
+    border-radius: 25%;
+    
 }
 
 .text{
     position: absolute;
     left: 500px;
-    right: 500px;
+    right: 400px;
     top: 0;
 }
 
@@ -36,7 +48,6 @@ img{
 .subheaders
 {
     font-size: 1.5em;
-    color: rgb(163, 191, 216);
     margin-left: 20px;
 }
 
@@ -97,5 +108,6 @@ img{
 body
 {
     background-color: rgb(51, 107, 139);
-    color: rgb(163, 191, 216);
+    color:rgb(219, 239, 250);
+    margin-top: 5%;
 }
