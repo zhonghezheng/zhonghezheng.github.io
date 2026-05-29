@@ -1,92 +1,279 @@
-<html>
-    <head>
-        <title>Catherine's Website</title>
-        <meta charset="uft-8">
-        <link rel="stylesheet" href="style.css">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhonghe (Catherine) Zheng</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <body>
-        <h1 class = "headers">About Me</h1>
-        <div class = "aboutme">
-            <img class = "headshot" src="images/headshot.jfif" alt="pic of me">
-            <img class = "vegas_photo" src="images/Vegas.jpg" alt="pic of Vegas">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand">Catherine Zheng</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#awards">Awards</a></li>
+            </ul>
+        </div>
+    </nav>
 
-            <div class = "text">
-                <p class = "text-content" >Hi! I'm Catherine, a student at Caltech studying Computer Science taking the Robotics and AI tracks. I'm also interested in Controls and Dynamics, and am currently working at the Caltech's Autonomous Robotics and Control Lab. When I'm not in school, I love collecting plushies, spending time with my dog, and drinking boba. </p>
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Zhonghe (Catherine) Zheng</h1>
+                <p class="hero-title">Ph.D. Student &mdash; Mechanical and Aerospace Engineering</p>
+                <p class="hero-institution">Princeton University &middot; IROM Lab</p>
+                <p class="hero-advisor">Advisor: Prof. Anirudha Majumdar</p>
+                <p class="hero-research">Robot Learning &middot; World Models &middot; Robotics</p>
+                <div class="hero-links">
+                    <a href="mailto:zhonghe.zheng@princeton.edu" class="btn-link">Email</a>
+                    <a href="https://github.com/zhonghezheng" class="btn-link" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/zhonghezheng" class="btn-link" target="_blank">LinkedIn</a>
+                    <a href="resume.pdf" class="btn-link" target="_blank">CV</a>
+                </div>
+            </div>
+            <div class="hero-photo">
+                <img src="images/headshot.jfif" alt="Zhonghe (Catherine) Zheng">
             </div>
         </div>
-        
-        <br>
+    </section>
 
-        <h1 class = "headers"> Projects </h1>
-        <div class = "b_category">
-            <div class = "category">
-                <div class = "p_content">
-                    <h3 class = "subheaders">Software</h3>
-                    <div class="plist">
-                        <p>Wikipedia Race Bot</p>
-                        <p>Journaling Application </p>
-                        <p>Messaging Application</p>
+    <!-- About -->
+    <section id="about" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <p>I am a first-year Ph.D. student in the Department of Mechanical and Aerospace Engineering at Princeton University, advised by Prof. Anirudha Majumdar in the <strong>IROM Lab</strong>. I received my B.S. in Computer Science (Machine Learning &amp; AI Track) with a minor in Robotics from the <strong>California Institute of Technology</strong> in 2025.</p>
+            <br>
+            <p>My research focuses on <strong>robot learning</strong> and <strong>world models</strong> &mdash; specifically, action-conditioned video world models for robotics. I am interested in building systems that can predict and reason about the future to enable more capable and generalizable robot behavior.</p>
+            <br>
+            <div class="skills-row">
+                <div class="skill-group">
+                    <span class="skill-label">Programming</span>
+                    <span>Python &middot; C++ &middot; ROS2 &middot; PyTorch &middot; Isaac Lab &middot; SKRL &middot; Git</span>
+                </div>
+                <div class="skill-group">
+                    <span class="skill-label">Hardware &amp; CAD</span>
+                    <span>SolidWorks &middot; AutoDesk &middot; 3D Printing &middot; Soldering &middot; Laser Cutting</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="section">
+        <div class="container">
+            <h2 class="section-title">Research Experience</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Sep 2025 &ndash; Present</div>
+                    <div class="timeline-content">
+                        <h3>IROM Lab &mdash; Princeton University</h3>
+                        <p class="role">Advisor: Prof. Anirudha Majumdar</p>
+                        <ul>
+                            <li>Surveying action-conditioned video world models with an emphasis on controllability, long-horizon prediction, and retention of pretrained visual knowledge</li>
+                            <li>Developing a novel action-conditioned world model architecture to improve controllability while mitigating catastrophic forgetting during fine-tuning</li>
+                            <li>Fine-tuned robot policies within a world model trained on autonomously collected play trajectories and conducted real-world hardware validation experiments</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class = "p_content">
-                    <h3 class = "subheaders">Hardware</h3>
-                    <div class="plist">
-                        <p>IMU Remote Controlled Car</p>
-                        <p>AruinoPod</p>
-                        <p>Red-light, Green-light Game</p>
-                    </div>    
+                <div class="timeline-item">
+                    <div class="timeline-date">Oct 2024 &ndash; Jun 2025</div>
+                    <div class="timeline-content">
+                        <h3>Autonomous Robotics and Control Lab &mdash; Caltech</h3>
+                        <p class="role">PI: Prof. Soon-Jo Chung &middot; Mentor: Sorina Lupu</p>
+                        <ul>
+                            <li>Worked on a custom biped platform exploring imitation learning and reinforcement learning for energy-efficient locomotion</li>
+                            <li>Trained PPO-based locomotion policies in Isaac Lab for energy-efficient bipedal walking</li>
+                        </ul>
+                    </div>
                 </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Jun &ndash; Aug 2024</div>
+                    <div class="timeline-content">
+                        <h3>NASA Jet Propulsion Laboratory &mdash; Research Intern</h3>
+                        <p class="role">Mentor: Dr. Ashish Goel</p>
+                        <ul>
+                            <li>Validated the novel hazard avoidance algorithm Optimization Based Kinematic Settling (OBKS) for the Endurance mission</li>
+                            <li>Developed a scalable evaluation pipeline for validating hazard-avoidance algorithms across multiple simulated terrains</li>
+                            <li>Integrated OBKS into a state lattice planner and compared performance against the Nav2 planner</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Jun &ndash; Aug 2023</div>
+                    <div class="timeline-content">
+                        <h3>Autonomous Robotics and Control Lab &mdash; Research Intern</h3>
+                        <p class="role">PI: Prof. Soon-Jo Chung &middot; Mentors: Dr. Matt Anderson, Joshua Cho</p>
+                        <ul>
+                            <li>Led electrical integration for an autonomous drone car prototype</li>
+                            <li>Integrated emergency power systems and customized flight controller communication pipelines</li>
+                            <li>Conducted software testing and debugging while improving modularity and code reuse</li>
+                            <li>Experimented with 6-DoF controller for the platform</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Jan &ndash; Jun 2023</div>
+                    <div class="timeline-content">
+                        <h3>CHAOS &mdash; NASA Big Idea Challenge</h3>
+                        <ul>
+                            <li>Contributed to brainstorming, technical development, and proposal writing</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
+    </section>
 
-        <br></br>
-        <br></br>
-        <br></br>
-        <h1 class = "headers"> Extracurricular </h1>
-        <div class = "b_category">
-            <div class = "category">
-                <div class = "ec_content">
-                    <h3 class = "subheaders">FRC Team 846</h3>
-                    <ul class="list">
-                        <li>Senior Design Lead</li>
-                        <li>Oversaw four different subsystems during Build Season</li>
-                        <li>Taught Design and Machining Workshops to 40-50 students</li>
+    <!-- Publications -->
+    <section id="publications" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <div class="pub-list">
+
+                <div class="pub-item">
+                    <p class="pub-text">
+                        Yin, T., Z. Mei, <strong>Z. Zheng</strong>, M. Yamane, D. Wang, J. Sceats, S. M. Bateman, L. Zha, A. Badithela, O. Shorinwa, and A. Majumdar. 2026.
+                        &ldquo;<span class="pub-title">PlayWorld: Learning Robot World Models from Autonomous Play.</span>&rdquo;
+                        <em>arXiv preprint arXiv:2603.09030.</em>
+                    </p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2603.09030" target="_blank" class="pub-badge">arXiv</a>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <p class="pub-text">
+                        Mei, Z., T. Yin, O. Shorinwa, A. Badithela, <strong>Z. Zheng</strong>, J. Bruno, M. Bland, L. Zha, A. Hancock, J. F. Fisac, and P. Dames. 2026.
+                        &ldquo;<span class="pub-title">Video Generation Models in Robotics: Applications, Research Challenges, Future Directions.</span>&rdquo;
+                        <em>arXiv preprint arXiv:2601.07823.</em>
+                    </p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2601.07823" target="_blank" class="pub-badge">arXiv</a>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <p class="pub-text">
+                        <strong>Zheng, C.</strong> 2024.
+                        &ldquo;<span class="pub-title">Autonomous Flying Ambulance: Hardware Integration and Testing.</span>&rdquo;
+                        <em>Caltech Undergraduate Research Journal.</em>
+                    </p>
+                </div>
+
+                <div class="pub-item">
+                    <p class="pub-text">
+                        Singh, P. R., N. Ng, A. Patel, C. Garrido, H. Carey, S. Daghlian, R. I. Ray, K. Pulungan, S. Polidoro, <strong>C. Zheng</strong>, and S.-J. Chung. 2023.
+                        &ldquo;<span class="pub-title">SPAMMM &ndash; Solar Powered Array for Melting Materials on the Moon.</span>&rdquo;
+                        In <em>2023 Regional Student Conferences</em>. p. 71914.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching -->
+    <section id="teaching" class="section">
+        <div class="container">
+            <h2 class="section-title">Teaching</h2>
+            <div class="teaching-grid">
+
+                <div class="teaching-card">
+                    <div class="teaching-meta">
+                        <span class="course-code">ME/CS/EE 133A</span>
+                        <span class="term">Fall 2024</span>
+                    </div>
+                    <h3>Robotics</h3>
+                    <p class="role">Teaching Assistant &mdash; Caltech</p>
+                    <ul>
+                        <li>Held office hours and recitations covering robotics, linear algebra, and Git</li>
+                        <li>Supported students in rigid body kinematics, dynamics, Jacobians, and manipulability</li>
+                        <li>Graded assignments and exams with detailed feedback</li>
                     </ul>
                 </div>
 
-                <div class = "ec_content">
-                    <h3 class = "subheaders">ICSSC Corporate Committee</h3>
-                    <ul class="list">
-                        <li>Build and maintain relationships with companies and alumni</li>
-                        <li>Helped organize workshops for ICS students on writing resumes, setting up GitHub, and interview processes</li>
-                    </ul>    
+                <div class="teaching-card">
+                    <div class="teaching-meta">
+                        <span class="course-code">ME/CS/EE 129</span>
+                        <span class="term">Spring 2024</span>
+                    </div>
+                    <h3>Experimental Robotics</h3>
+                    <p class="role">Teaching Assistant &mdash; Caltech</p>
+                    <ul>
+                        <li>Mentored student teams in robotics software, ROS architectures, and hardware debugging</li>
+                        <li>Provided weekly technical guidance and code reviews</li>
+                    </ul>
                 </div>
 
-                <div class = "ec_content">
-                    <h3 class = "subheaders">IEEE</h3>
-                    <ul class="list">
-                        <li>Part of OPS: Built projects with a focus on learning about embedded systems </li>
-                        <li>List of projects: Distance Sensor, Redlight, Greenlight, MicroMouse</li>
-                    </ul>    
-                </div>      
+                <div class="teaching-card">
+                    <div class="teaching-meta">
+                        <span class="course-code">CS 21</span>
+                        <span class="term">Winter 2024</span>
+                    </div>
+                    <h3>Decidability &amp; Tractability</h3>
+                    <p class="role">Teaching Assistant &mdash; Caltech</p>
+                    <ul>
+                        <li>Assisted students with automata theory, reductions, computability, and NP-completeness</li>
+                        <li>Held office hours and graded assignments with constructive feedback</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
-        
-        <br></br>
-        <br></br>
-        <div class = "b_category">
-            <div class = "contacts">
-                <a href ="https://github.com/zhonghezheng" target="_blank"><img src="images/GitHub-Emblem.png" alt="Github"></a>
-                <a href = "https://zhonghezheng.github.io/resume.pdf" target="_blank"><img class = "resume" src = "images/resume.png" alt="Resume"></a>
-                <a href = "https://www.linkedin.com/in/zhonghezheng" target="_blank"><img src = "images/linkedin.png" alt="Linkedin"></a>
+    </section>
+
+    <!-- Awards -->
+    <section id="awards" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Honors &amp; Awards</h2>
+            <div class="awards-list">
+
+                <div class="award-item">
+                    <div class="award-year">2024</div>
+                    <div>
+                        <h3>Edward C. Stone Voyager SURF Fellowship</h3>
+                        <p>Summer Undergraduate Research Fellowship &mdash; NASA Jet Propulsion Laboratory</p>
+                    </div>
+                </div>
+
+                <div class="award-item">
+                    <div class="award-year">2023</div>
+                    <div>
+                        <h3>Marcella Bonsall SURF Fellowship</h3>
+                        <p>Summer Undergraduate Research Fellowship &mdash; Caltech</p>
+                    </div>
+                </div>
+
             </div>
         </div>
+    </section>
 
-        <br></br>
-    </body>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Zhonghe (Catherine) Zheng &middot; Princeton University</p>
+            <div class="footer-links">
+                <a href="mailto:zhonghe.zheng@princeton.edu">zhonghe.zheng@princeton.edu</a>
+                <a href="https://github.com/zhonghezheng" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/zhonghezheng" target="_blank">LinkedIn</a>
+                <a href="resume.pdf" target="_blank">CV</a>
+            </div>
+        </div>
+    </footer>
 
-    
+</body>
 </html>
-
